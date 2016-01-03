@@ -89,3 +89,4 @@ qtcreator-*
 CATKIN_IGNORE
 # custom file for documentation.docx
 .~lock.dokumentation.docx#
+*/.idea
