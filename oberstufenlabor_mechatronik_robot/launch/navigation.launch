@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<launch>
+	<!-- set map by argument -->
+	<arg name="map" default="$(find oberstufenlabor_mechatronik_robot)/cfg/map_small.yaml"/>
+
+        <!-- start map server -->
+	<node pkg="map_server" type="map_server" name="map_server" args="$(arg map)"  />
+
+         <!-- start front laser -->
+        <include file="$(find youbot_launch)/launch/youbot_hokuyo.launch" />
+
+        <!-- start back laser -->
+	<include file="$(find youbot_launch)/launch/youbot_hokuyo_back.launch" />
+
+	<!-- run amcl_scan_remapper -->
+	<node pkg="imes_navigation" type="amcl_scan_remapper" name="amcl_scan_remapper"/>
+
+ 	<!--- Run AMCL -->
+	<node pkg="amcl" type="amcl" name="amcl" output="screen">		
+		<remap from="/scan" to="/scan_combined"/>
+                <rosparam file="$(find imes_navigation)/cfg/amcl_params.yaml" command="load" />
+	</node>
+
+	<!-- set goal tolerance lower for navigating with rviz -->
+	<param name="xy_goal_tolerance" type="double" value="0.2"/>
+
+</launch>

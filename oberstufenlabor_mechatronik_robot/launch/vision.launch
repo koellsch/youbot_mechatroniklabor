@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<launch>
+       <!-- LAUNCH BALL FINDER -->
+       <include file="$(find oberstufenlabor_mechatronik_vision)/launch/exercise03.launch" />
+
+</launch>

@@ -1,0 +1,21 @@
+Red:
+  H_min: 0
+  S_min: 0
+  V_min: 0
+  S_max: 256
+  H_max: 180
+  V_max: 256
+Green:
+  H_min: 0
+  H_max: 180
+  S_min: 0
+  S_max: 256
+  V_min: 0
+  V_max: 256
+Yellow:
+  H_min: 0
+  H_max: 180
+  S_min: 0
+  S_max: 256
+  V_min: 0
+  V_max: 256

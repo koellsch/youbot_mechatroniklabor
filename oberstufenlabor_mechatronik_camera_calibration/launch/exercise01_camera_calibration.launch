@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<launch>
+	<!-- start webcam Node -->
+	<node pkg="usb_cam" type="usb_cam_node" name="usb_cam" output="screen" />
+
+	<!-- launch gui -->
+	<node pkg="oberstufenlabor_mechatronik_camera_calibration" type="cameracalibration_node" name="cameracalibration" output="screen" />
+</launch>

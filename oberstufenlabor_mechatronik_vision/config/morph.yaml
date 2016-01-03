@@ -1,0 +1,4 @@
+Erosion:
+  kernel_size: 5
+Dilation:
+  kernel_size: 5

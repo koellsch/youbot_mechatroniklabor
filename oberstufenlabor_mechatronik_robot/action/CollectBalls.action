@@ -1,0 +1,9 @@
+# goal
+string color
+int32 number
+---
+# result
+int32 number
+---
+# feedback
+int32 number

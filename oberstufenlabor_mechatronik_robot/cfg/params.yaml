@@ -1,0 +1,17 @@
+turn_angle: 0.4
+search_pose_1: SEARCH_LOW
+search_pose_2: SEARCH_HIGH
+dump_pose: DUMP_BALL
+grip_pose: GRIP
+forward_distance: 0.2
+angle_align_tolerance: 0.1
+angle_align_velocity_factor: 0.3
+max_lost_ball_count: 3
+position_align_tolerance: 0.006
+position_align_velocity_factor: 0.3
+above_pose_height_diff: 0.03
+above_pose_radius_diff: 0.01
+max_turn_angle: 3.4
+hold_duration: 0.2
+image_ratio: 1.77777778
+interpolation_velocity_factor: 0.01

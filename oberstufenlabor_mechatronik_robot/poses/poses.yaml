@@ -1,0 +1,154 @@
+---
+ARM_UP:
+  - arm_joint_1: 202
+  - arm_joint_2: 65
+  - arm_joint_3: -146
+  - arm_joint_4: 102.5
+  - arm_joint_5: 172
+---
+ARM_UP_180:
+  - arm_joint_1: 22.00000000000001
+  - arm_joint_2: 65
+  - arm_joint_3: -146
+  - arm_joint_4: 102.5
+  - arm_joint_5: 172
+---
+CARGO_1:
+  - arm_joint_1: 212.0001923076923
+  - arm_joint_2: 53.65673076923076
+  - arm_joint_3: -237.3327
+  - arm_joint_4: 54.6756338028169
+  - arm_joint_5: 171.9976056338028
+---
+CARGO_2:
+  - arm_joint_1: 193.8409615384615
+  - arm_joint_2: 53.65673076923076
+  - arm_joint_3: -237.3327
+  - arm_joint_4: 54.6756338028169
+  - arm_joint_5: 171.9976056338028
+---
+CARGO_3:
+  - arm_joint_1: 189.3392307692307
+  - arm_joint_2: 24.83365384615384
+  - arm_joint_3: -195.8931
+  - arm_joint_4: 42.06042253521127
+  - arm_joint_5: 171.9976056338028
+---
+CARGO_4:
+  - arm_joint_1: 202.8444230769231
+  - arm_joint_2: 28.60788461538462
+  - arm_joint_3: -201.4938
+  - arm_joint_4: 43.88577464788733
+  - arm_joint_5: 171.9976056338028
+---
+CARGO_5:
+  - arm_joint_1: 216.3490384615384
+  - arm_joint_2: 25.79596153846153
+  - arm_joint_3: -195.8454
+  - arm_joint_4: 41.04887323943662
+  - arm_joint_5: 171.9976056338028
+---
+CARGO_6:
+  - arm_joint_1: 218.0001923076923
+  - arm_joint_2: 15.22038461538462
+  - arm_joint_3: -194.6925
+  - arm_joint_4: 67.57352112676057
+  - arm_joint_5: 171.996338028169
+---
+CARGO_7:
+  - arm_joint_1: 207.9998076923077
+  - arm_joint_2: 21.23480769230769
+  - arm_joint_3: -203.1993
+  - arm_joint_4: 70.06436619718311
+  - arm_joint_5: 171.996338028169
+---
+CARGO_8:
+  - arm_joint_1: 195.9998076923077
+  - arm_joint_2: 21.2001923076923
+  - arm_joint_3: -203.2002
+  - arm_joint_4: 70.09985915492958
+  - arm_joint_5: 171.996338028169
+---
+CARGO_9:
+  - arm_joint_1: 185.9630769230769
+  - arm_joint_2: 15.22038461538462
+  - arm_joint_3: -194.6925
+  - arm_joint_4: 67.57352112676057
+  - arm_joint_5: 171.996338028169
+---
+CARGO_ABOVE:
+  - arm_joint_1: 201.4944230769231
+  - arm_joint_2: 40.29923076923077
+  - arm_joint_3: -204.8985
+  - arm_joint_4: 52.59929577464789
+  - arm_joint_5: 171.9950704225352
+---
+GRIP:
+  - arm_joint_1: 201.9998076923077
+  - arm_joint_2: 147.5573076923077
+  - arm_joint_3: -85.4541
+  - arm_joint_4: 99.66042253521125
+  - arm_joint_5: 171.996338028169
+---
+GRIP_ABOVE:
+  - arm_joint_1: 201.9998076923077
+  - arm_joint_2: 106.965
+  - arm_joint_3: -35.08110000000001
+  - arm_joint_4: 89.84535211267607
+  - arm_joint_5: 171.9912676056338
+---
+HOME:
+  - arm_joint_1: 2.000192307692304
+  - arm_joint_2: 2.000192307692304
+  - arm_joint_3: -1.999800000000001
+  - arm_joint_4: 2.499718309859155
+  - arm_joint_5: 9
+---
+PUSH_ABOVE:
+  - arm_joint_1: 204.0170401686072
+  - arm_joint_2: 94.3404442880487
+  - arm_joint_3: -53.97917625590753
+  - arm_joint_4: 160.5192399865695
+  - arm_joint_5: 164.6268337911451
+---
+PUSH_BACK:
+  - arm_joint_1: 204.0023076923077
+  - arm_joint_2: 111.9484615384615
+  - arm_joint_3: -37.28340000000001
+  - arm_joint_4: 144.1888732394366
+  - arm_joint_5: 171.5716901408451
+---
+PUSH_FRONT:
+  - arm_joint_1: 204.0017307692308
+  - arm_joint_2: 126.2140384615385
+  - arm_joint_3: -64.791
+  - arm_joint_4: 100.4983098591549
+  - arm_joint_5: 172.0419718309859
+---
+PUSH_PLACE:
+  - arm_joint_1: 204.0103846153846
+  - arm_joint_2: 132.4875
+  - arm_joint_3: -75.8925
+  - arm_joint_4: 144.1723943661972
+  - arm_joint_5: 164.7076056338028
+---
+SEARCH_HIGH:
+  - arm_joint_1: 202.0125
+  - arm_joint_2: 23.66826923076923
+  - arm_joint_3: -50.39730000000001
+  - arm_joint_4: 185.3885915492958
+  - arm_joint_5: 171.372676056338
+---
+SEARCH_LOW:
+  - arm_joint_1: 201.9998076923077
+  - arm_joint_2: 34.39846153846154
+  - arm_joint_3: -46.8864
+  - arm_joint_4: 194.2985915492958
+  - arm_joint_5: 171.9938028169014
+---
+TRANSPORT:
+  - arm_joint_1: 202
+  - arm_joint_2: 4.999999999999995
+  - arm_joint_3: -85
+  - arm_joint_4: 195
+  - arm_joint_5: 172

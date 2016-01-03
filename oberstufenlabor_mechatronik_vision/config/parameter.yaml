@@ -1,0 +1,21 @@
+Red:
+  H_min: 0
+  S_min: 162
+  V_min: 134
+  S_max: 198
+  H_max: 180
+  V_max: 184
+Green:
+  H_min: 47
+  H_max: 78
+  S_min: 45
+  S_max: 146
+  V_min: 74
+  V_max: 164
+Yellow:
+  H_min: 30
+  H_max: 42
+  S_min: 73
+  S_max: 160
+  V_min: 90
+  V_max: 169

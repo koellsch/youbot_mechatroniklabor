@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<package>
+  <name>oberstufenlabor_mechatronik_camera_calibration</name>
+  <version>0.9.9</version>
+  <description>
+  Oberstufenlabor Mechatronik - Versuch: Bildrückgeführte Regelung am Beispiel des youBots
+  Camera Calibration Package
+  </description>
+
+  <maintainer email="florian.koehler@gmx.net">Florian Köhler</maintainer>
+  <license>BSD</license>
+
+  <buildtool_depend>catkin</buildtool_depend>
+  <build_depend>roscpp</build_depend>
+  <build_depend>robot_state_publisher</build_depend>
+  <build_depend>urdf</build_depend>
+  <build_depend>geometry_msgs</build_depend>
+  <build_depend>image_transport</build_depend>
+  <build_depend>cv_bridge</build_depend>
+  <build_depend>luh_youbot_kinematics</build_depend>
+  <build_depend>tf</build_depend>
+
+  <run_depend>roscpp</run_depend>
+  <run_depend>robot_state_publisher</run_depend>
+  <run_depend>urdf</run_depend>
+  <run_depend>geometry_msgs</run_depend>
+  <run_depend>image_transport</run_depend>
+  <run_depend>cv_bridge</run_depend>
+  <run_depend>luh_youbot_kinematics</run_depend>
+  <run_depend>tf</run_depend>
+  <run_depend>usb_cam</run_depend>
+
+</package>

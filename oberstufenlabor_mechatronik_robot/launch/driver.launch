@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+<launch>
+	<arg name="youBotHasBase" default="true"/>
+	<arg name="youBotHasArm" default="true"/>
+	
+        <!-- LOAD DEFAULT DRIVER PARAMETERS -->
+        <include file="$(find luh_youbot_interface)/launch/load_default_parameters.launch">
+                <arg name="youBotHasArm" value="$(arg youBotHasArm)"/>
+                <arg name="youBotHasBase" value="$(arg youBotHasBase)"/>
+        </include>
+
+	<!-- LOAD DEFAULT MANIPULATION PARAMETERS -->
+	<include file="$(find luh_youbot_manipulation)/launch/load_default_parameters.launch" />
+
+        <!-- LAUNCH STATE PUBLISHER -->
+        <include file="$(find luh_youbot_manipulation)/launch/youbot_state_publisher.launch">
+                <arg name="youBotHasArm" value="$(arg youBotHasArm)"/>
+                <arg name="youBotHasBase" value="$(arg youBotHasBase)"/>
+        </include>
+
+        <!-- CUSTOM PARAMETERS -->
+	<param name="module_motion_planner/poses_file" value="$(find oberstufenlabor_mechatronik_robot)/poses/poses.yaml" />
+	<param name="module_motion_planner/neighbors_file" value="$(find oberstufenlabor_mechatronik_robot)/poses/neighbors.yaml" />
+	<param name="luh_youbot_manipulation/poses_file" value="$(find oberstufenlabor_mechatronik_robot)/poses/poses.yaml" />
+	<param name="module_base_controller/max_velocity_x" value="0.3" />
+	<param name="module_base_controller/max_velocity_y" value="0.3" />
+	<param name="module_base_controller/max_velocity_theta" value="0.3" />
+	<param name="luh_youbot_manipulation/use_standard_gripper" value="false" />
+	<param name="youBotArmName1" value="youbot-manipulator_nogripper" />
+
+       	<!-- LAUNCH DRIVER NODE -->
+	<node name="manipulation_node" pkg="luh_youbot_manipulation" type="manipulation_node" output="screen" respawn="true">
+                <remap from="cmd_vel" to="cmd_vel_safe"/>
+        </node>
+
+	<!-- LOAD LASER WATCHDOG PARAMETERS -->
+	<rosparam file="$(find luh_laser_watchdog)/cfg/params.yaml" command="load" ns="laser_watchdog" />
+	<param name="laser_watchdog/enable_on_startup" value="false"/>	
+
+	<!-- LAUNCH MANAGER NODE -->
+	<node name="laser_watchdog" pkg="luh_laser_watchdog" type="watchdog" output="screen" />
+
+       <!-- LAUNCH GRIPPER NODE -->
+       <include file="$(find luh_gripper)/launch/gripper.launch" />
+
+</launch>

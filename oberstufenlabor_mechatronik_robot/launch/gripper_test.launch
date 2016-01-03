@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<launch>
+	<!-- LOAD PARAMETERS -->
+	<rosparam command="load" ns="oberstufenlabor_mechatronik_robot" file="$(find oberstufenlabor_mechatronik_robot)/cfg/params.yaml" />
+
+        <!-- DEFINE POSES.YAML LOCATION -->
+        <param name="oberstufenlabor_mechatronik_robot/poses_file" value="$(find oberstufenlabor_mechatronik_robot)/poses/poses.yaml" />
+
+        <!-- LAUNCH BALL COLLECTOR NODE -->
+        <node name="exercise04_gripper_test" pkg="oberstufenlabor_mechatronik_robot" type="exercise04_gripper_test" output="screen"/>
+
+</launch>

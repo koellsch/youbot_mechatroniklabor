@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<launch>
+	<!-- LAUNCH DRIVER -->
+	<include file="$(find oberstufenlabor_mechatronik_robot)/launch/driver.launch" />
+
+	<!-- LOAD LASER WATCHDOG PARAMETERS -->
+	<rosparam file="$(find luh_laser_watchdog)/cfg/params.yaml" command="load" ns="laser_watchdog" />
+	<param name="laser_watchdog/enable_on_startup" value="false"/>	
+
+	<!-- LAUNCH MANAGER NODE -->
+	<node name="ll_watchdog" pkg="luh_laser_watchdog" type="watchdog" output="screen" />
+
+	<!-- LAUNCH NAVIGATION -->
+	<include file="$(find oberstufenlabor_mechatronik_robot)/launch/navigation.launch" />
+
+</launch>
